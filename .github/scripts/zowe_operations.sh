@@ -9,7 +9,7 @@ if ! zowe zos-files list uss-files "/z/$LOWERCASE_USERNAME/cobolcheck" &>/dev/nu
   zowe zos-files create uss-directory /z/$LOWERCASE_USERNAME/cobolcheck
 else
   echo "Directory already exists."
-  fi
+fi
   
 # Upload files
 zowe zos-files upload dir-to-uss "./cobol-check" "/z/$LOWERCASE_USERNAME/cobolcheck" --recursive
